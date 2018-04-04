@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+		
+	<div class="page-header">
+		<a href="#" class="page-header__table-title">
+			<h1><i class="fas fa-briefcase"></i>Business Development<i class="fas fa-caret-down"></i></h1>
+		</a>
+		<a href="#" class="page-header__info-icon">
+			<i class="fas fa-info-circle"></i>
+		</a>
+		
+		<nav>
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-icon">
+					<a class="nav-icon-link" href="#">
+						<i class="fas fa-bars"></i>
+					</a>
+				</li>
+				<li class="nav-item nav-oport-tab-wrap">
+					<a class="nav-link active" id="nav-opport-tab" data-toggle="tab" href="#nav-opport" role="tab" aria-controls="nav-opport" aria-selected="true">
+						<label id="first-tab-name" class="tab-name">Opportunities</label>
+						<input id="first-tab-input" type="text" value="Opportunities" style="display: none">
+						<div class="dropdown oport-tab-dropdown">
+							<button class="dropdown-toggle dropdown-toggle-subtub" type="button" id="context-tab-link"></button>
+						</div>
+						<div class="dropdown-menu dropdown-menu-subtab">
+							<button class="dropdown-item" id="rename-table-btn" type="button"><i class="fas fa-pencil-alt"></i>Rename table</button>
+							<button class="dropdown-item" type="button"><i class="fas fa-info-circle"></i>Edit description</button>
+							<button class="dropdown-item" type="button"><i class="fas fa-copy"></i>Duplicate table</button>
+							<button class="dropdown-item" type="button"><i class="fas fa-trash"></i>Delete table</button>
+						</div>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" id="nav-partner-tab" data-toggle="tab" href="#nav-partner" role="tab" aria-controls="nav-partner" aria-selected="false">Partners</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Interactions</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contacts</a>
+				</li>
+				<li class="nav-icon">
+					<a class="nav-icon-link" href="#">
+						<i class="fas fa-plus-square"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="nav-opport" role="tabpanel" aria-labelledby="nav-opport-tab">
+				<div class="tab-content__header">
+						
+					<div class="dropdown show">
+						<a class="tab-content__header-link tab-content__header-link--view" id="view-link" href="#">
+							<i class="fas fa-caret-down"></i>
+							<i class="fas fa-table"></i>
+							<span class="tab-content__header-link--title">Main View</span>
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-view">
+							<div class="custom-input-wrap">
+								<input type="text" name="" id="" placeholder="Find a view">
+								<span class="custom-input-check">
+									Show everyone's personal views
+									<input type="checkbox">
+								</span>
+							</div>
+
+							<a class="dropdown-item chosen" href="#">
+								<i class="fas fa-table"></i>
+								<span>Main view</span>
+							</a>
+							<a class="dropdown-item" href="#">
+								<i class="fas fa-th-large"></i>
+								<span>Active deals only</span>
+							</a>
+							<a class="dropdown-item" href="#">
+								<i class="fas fa-th"></i>
+								<span>Contract progress canban</span>
+							</a>
+
+							<figure class="horizontal-line"></figure>
+
+							<div class="dropdown-menu__bottom-line">
+								<span>Add a view:</span>
+								<a href="#">Grid</a>
+								<a href="#">Form</a>
+								<a href="#">Calendar</a>
+								<a href="#">Gallery</a>
+								<a href="#">Kanban</a>
+							</div>
+						</div>
+					</div>
+
+					<a class="tab-content__header-link--group" href="#">
+						<i class="fas fa-users"></i>
+					</a>
+
+
+					<div class="tab-content__header-options-wrap">
+						
+						
+						<div class="dropdown show dropdown-menuhide">
+							<a href="#" class="tab-content__header-options-item" id="hide-link">
+								<i class="fas fa-eye-slash"></i> Hide fields	
+							</a>
+
+							<div class="dropdown-menu dropdown-menu-hide">
+								<input type="text" name="" id="" placeholder="Find a field">
+								<ul class="fields-to-hide sortable">
+									
+									<li class="fields-to-hide_option">
+										<label for="field1" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field1" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field1"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-handshake"></i>Partners
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field2" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field2" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field2"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-calendar"></i>Date
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field3" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field3" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field3"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-tasks"></i>Products Discussed
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field4" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field4" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field4"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-dollar-sign"></i>Size of Opportunity
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field5" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field5" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field5"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-check-square"></i>Active?
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field6" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field6" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field6"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-caret-square-down"></i>Estimated time to close
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field7" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field7" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field7"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-file"></i>Contracts
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field8" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field8" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field8"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-caret-square-down"></i>Contract stage
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field9" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field9" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field9"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-align-left"></i>Long text
+											</div>
+										</label>
+									</li>
+								
+								</ul>
+			
+								<div class="menuhide-buttons-line">
+									<a href="#" class="menuhide-hideall-btn">Hide all</a>
+									<a href="#" class="menuhide-showall-btn">Show all</a>
+								</div>	
+									
+							</div>
+
+						</div>
+						
+						<div class="dropdown show dropdown-menufilter">
+							<a class="tab-content__header-options-item" id="filter-link" href="#">
+								<i class="fas fa-align-center"></i> Filter
+							</a>
+
+							<div class="dropdown-menu dropdown-menu-filter">
+									
+								<div class="dropdown-menu-filter__line">
+									<div class="dropdown-menu__filter-item">
+										<a href="#" class="">
+											<i class="fas fa-times fa-xs"></i>
+										</a>
+										<span>Where</span>
+									</div>
+									<select class="selectpicker" data-live-search="true">
+										<option data-content="<span class='selectpicker-option'>Name</span>" selected>Name</option>
+										<option data-content="<span class='selectpicker-option'>Partners</span>">Partners</option>
+										<option data-content="<span class='selectpicker-option'>Products Discussed</span>">Products Discussed</option>
+										<option data-content="<span class='selectpicker-option'>Size of Opportunity</span>">Size of Opportunity</option>
+										<option data-content="<span class='selectpicker-option'>Active</span>">Active</option>
+										<option data-content="<span class='selectpicker-option'>Estimated time of close</span>">Estimated time of close</option>
+										<option data-content="<span class='selectpicker-option'>Contracts</span>">Contracts</option>
+										<option data-content="<span class='selectpicker-option'>Contract stage</span>">Contract stage</option>
+										<option data-content="<span class='selectpicker-option'>Long text</span>">Long text</option>
+									</select>
+									<select class="selectpicker " data-live-search="true">
+										<option data-content="<span class='selectpicker-option'>contains</span>" selected>contains</option>
+										<option data-content="<span class='selectpicker-option'>does not contain</span>">does not contain</option>
+										<option data-content="<span class='selectpicker-option'>is</span>">is</option>
+										<option data-content="<span class='selectpicker-option'>is not</span>">is not</option>
+										<option data-content="<span class='selectpicker-option'>is empty</span>">is empty</option>
+										<option data-content="<span class='selectpicker-option'>is not empty</span>">is not empty</option>
+									</select>
+									<input class="filter-input" type="text" name="" id="">
+								</div>
+								<br />
+								
+								<div class="dropdown-menu-filter__addline">
+									<a href="#">
+										<i class="fas fa-plus fa-xs"></i>
+										<span>Add filter</span>
+									</a>
+								</div>
+
+							</div>
+
+						</div>
+
+						<a href="#" class="tab-content__header-options-item">
+							<i class="fas fa-list-alt"></i> Group
+						</a>
+						<a href="#" class="tab-content__header-options-item">
+							<i class="fas fa-exchange-alt"></i> Sort
+						</a>
+						<a href="#" class="tab-content__header-options-item">
+							<i class="fas fa-paint-brush"></i> Color
+						</a>
+						<a href="#" class="tab-content__header-options-item">
+							<i class="fas fa-text-height"></i>
+						</a>
+						<a href="#" class="tab-content__header-options-item">
+							<i class="fas fa-external-link-alt"></i>
+						</a>
+						<a href="#" class="tab-content__header-options-item">
+							<i class="fas fa-ellipsis-h"></i>
+						</a>
+					</div>
+
+					<div class="dropdown show search-dropdown-wrap">
+
+						<a href="#" class="tab-content__header-options-item item--search" href="#" id="search-link">
+							<i class="fas fa-search"></i>
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-right dropdown-menu-search">
+							
+							<div class="">
+								<input type="text" name="" id="" placeholder="Find a view">
+								<a class="dropdown-menu-search__icon-link" href="#">
+									<i class="fas fa-times fa-xs"></i>	
+								</a>
+								<div class="search-info">Use advanced search options in the <a href="#">search block</a></div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="tab-content__body">
+
+					<div class="table-responsive">
+						<table class="table table-bordered custom-table">
+							<thead>
+								<tr>
+									<th scope="col" style="min-width: 137px;">
+										<i class="fas fa-font"></i>
+										Name
+									</th>
+									<th scope="col" class="field1-col">
+										<i class="fas fa-handshake"></i>
+										Partners
+									</th>
+									<th scope="col" class="field2-col" style="width: 153px">
+										<i class="fas fa-calendar"></i>
+										Date
+									</th>
+									<th scope="col" class="field3-col" style="width: 180px">
+										<i class="fas fa-tasks"></i>
+										Products Discussed
+									</th>
+									<th scope="col" class="field4-col">
+										<i class="fas fa-dollar-sign"></i>
+										Size of Opportunity
+									</th>
+									<th scope="col" class="field5-col">
+										<i class="fas fa-check-square"></i>
+										Active?
+									</th>
+									<th scope="col" class="field6-col" style="width: 120px">
+										<i class="fas fa-caret-square-down"></i>
+										Estimated time to close
+									</th>
+									<th scope="col" class="field7-col">
+										<i class="fas fa-file"></i>
+										Contracts
+									</th>
+									<th scope="col" class="field8-col">
+										<i class="fas fa-caret-square-down"></i>
+										Contract stage
+									</th>
+									<th scope="col" class="field9-col" style="width: 180px">
+										<i class="fas fa-align-left"></i>
+										Long text
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>FireBasket Deal</td>
+									<td class="field1-col">FireBasket</td>
+									<td class="field2-col">
+										<input id="date" type="date" class="date-input"> 
+									</td>
+									<td class="textarea-cell field3-col" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
+									<td class="field4-col" contentEditable>$200,000.00</td>
+									<td class="field5-col">
+										<input type="checkbox" name="" id="">
+									</td>
+									<td class="dropdown-cell field6-col">
+										<select class="selectpicker" data-live-search="true">
+											<option data-content="<span class='selectpicker-option period-option-1'>0-2 months</span>" selected>0-2 months</option>
+											<option data-content="<span class='selectpicker-option period-option-2'>2-6 months</span>">2-6 months</option>
+											<option data-content="<span class='selectpicker-option period-option-3'>6+ months</span>">6+ months</option>
+										</select>
+									</td>
+									<td class="field7-col"></td>
+									<td class="dropdown-cell field8-col">
+										<select class="selectpicker" data-live-search="true">
+											<option data-content="<span class='selectpicker-option stage-option-1'>Request</span>" selected>Request</option>
+											<option data-content="<span class='selectpicker-option stage-option-2'>Negotiation</span>">Negotiation</option>
+											<option data-content="<span class='selectpicker-option stage-option-3'>Approval</span>">Approval</option>
+											<option data-content="<span class='selectpicker-option stage-option-4'>Execution</span>">Execution</option>
+										</select>
+									</td>
+									<td class="textarea-cell field9-col" contentEditable></td>
+								</tr>
+								<tr>
+									<td>Earworm Deal</td>
+									<td class="field1-col">FireBasket</td>
+									<td class="field2-col">
+										<input id="date" type="date" class="date-input">
+									</td>
+									<td class="textarea-cell field3-col" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
+									<td class="field4-col" contentEditable>$200,000.00</td>
+									<td class="field5-col">
+										<input type="checkbox" name="" id="">
+									</td>
+									<td class="dropdown-cell field6-col">
+											<select class="selectpicker" data-live-search="true">
+												<option data-content="<span class='selectpicker-option period-option-1'>0-2 months</span>">0-2 months</option>
+												<option data-content="<span class='selectpicker-option period-option-2'>2-6 months</span>" selected>2-6 months</option>
+												<option data-content="<span class='selectpicker-option period-option-3'>6+ months</span>">6+ months</option>
+											</select>
+										</td>
+									<td class="field7-col"></td>
+									<td class="dropdown-cell field8-col">
+										<select class="selectpicker" data-live-search="true">
+											<option data-content="<span class='selectpicker-option stage-option-1'>Request</span>">Request</option>
+											<option data-content="<span class='selectpicker-option stage-option-2'>Negotiation</span>">Negotiation</option>
+											<option data-content="<span class='selectpicker-option stage-option-3'>Approval</span>">Approval</option>
+											<option data-content="<span class='selectpicker-option stage-option-4'>Execution</span>" selected>Execution</option>
+										</select>
+									</td>
+									<td class="textarea-cell field9-col" contentEditable></td>
+								</tr>
+								<tr>
+									<td>Positronic API</td>
+									<td class="field1-col">FireBasket</td>
+									<td class="field2-col">
+										<input id="date" type="date" class="date-input">
+									</td>
+									<td class="textarea-cell field3-col" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
+									<td class="field4-col" contentEditable>$200,000.00</td>
+									<td class="field5-col">
+										<input type="checkbox" name="" id="">
+									</td>
+									<td class="dropdown-cell field6-col">
+										<select class="selectpicker" data-live-search="true">
+											<option data-content="<span class='selectpicker-option period-option-1'>0-2 months</span>">0-2 months</option>
+											<option data-content="<span class='selectpicker-option period-option-2'>2-6 months</span>">2-6 months</option>
+											<option data-content="<span class='selectpicker-option period-option-3'>6+ months</span>" selected>6+ months</option>
+										</select>
+									</td>
+									<td class="field7-col"></td>
+									<td class="dropdown-cell field8-col">
+										<select class="selectpicker" data-live-search="true">
+											<option data-content="<span class='selectpicker-option stage-option-1'>Request</span>">Request</option>
+											<option data-content="<span class='selectpicker-option stage-option-2'>Negotiation</span>">Negotiation</option>
+											<option data-content="<span class='selectpicker-option stage-option-3'>Approval</span>" selected>Approval</option>
+											<option data-content="<span class='selectpicker-option stage-option-4'>Execution</span>">Execution</option>
+										</select>
+									</td>
+									<td class="textarea-cell field9-col" contentEditable></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+				
+			</div>
+			<div class="tab-pane fade" id="nav-partner" role="tabpanel" aria-labelledby="nav-partner-tab"></div>
+		</div>
+
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
